@@ -209,3 +209,117 @@ The overall workflow of the proposed system is:
 6. **Hybrid Model:** Combine content similarity and predicted user ratings.
 7. **XAI:** Generate similarity, confidence, and feature-based explanations.
 8. **Output:** Provide personalized and explainable song recommendations.
+
+---
+
+## 📈 Model Evaluation
+
+### RMSE
+
+The SVD collaborative filtering model achieved:
+
+**RMSE = 1.0179**
+
+RMSE measures the difference between predicted and actual ratings, where a lower value indicates better prediction accuracy.
+
+### Precision@10
+
+The recommendation system achieved:
+
+**Precision@10 = 0.238**
+
+This indicates that approximately **23.8% of the top-10 recommendations** were relevant under the defined evaluation setup.
+
+The evaluation was performed using sampled synthetic user interactions and is intended for academic demonstration rather than direct comparison with production-scale recommendation systems.
+
+---
+
+## 📊 Key Results
+
+The proposed system successfully:
+
+- Identifies similar songs using KNN.
+- Predicts user preferences using SVD.
+- Combines both techniques through hybrid recommendation.
+- Generates personalized music recommendations.
+- Provides similarity and confidence scores.
+- Generates feature-based explanations.
+- Supports discovery of both popular and lesser-known songs.
+
+---
+
+## 🔬 Research Contribution
+
+The main contribution of this project is the integration of **hybrid recommendation techniques with Explainable AI**.
+
+The system not only recommends songs but also provides understandable explanations based on song characteristics and recommendation scores.
+
+The proposed approach focuses on:
+
+**Personalization + Similarity + Explainability**
+
+---
+
+## ⚖️ Advantages
+
+- Combines content-based and collaborative filtering.
+- Provides personalized recommendations.
+- Uses multiple Spotify audio features.
+- Provides interpretable recommendation explanations.
+- Supports music discovery beyond highly popular songs.
+- Suitable for academic experimentation and research.
+
+---
+
+## ⚠️ Limitations
+
+- User interaction data is synthetic rather than collected from real Spotify users.
+- Evaluation has limited representation of real-world user preferences.
+- The current implementation is primarily offline.
+- Contextual information such as time, device, activity, and location is not considered.
+- Deep learning-based ranking is not currently implemented.
+- Real-time personalization is limited.
+
+---
+
+## 🚀 Future Scope
+
+Future improvements may include:
+
+- Real-time Spotify API integration.
+- Deep learning-based recommendation models.
+- Emotion-aware music recommendation.
+- Real user feedback and listening behavior.
+- Skip, like, and listening-duration signals.
+- A/B testing.
+- Continuous personalization.
+- Improved cold-start handling.
+- Context-aware recommendations.
+
+---
+
+## 📚 Research References
+
+1. J. Zhao, "S-VAERec: A Hybrid Music Recommendation Strategy Based on Generative Modelling and Music Similarity," *Applied and Computational Engineering*, vol. 146, pp. 232–241, May 2025.
+
+2. S. Shashaani, "Explainability in Music Recommender System," in *Proc. 18th ACM Conf. Recommender Systems (RecSys '24)*, 2024.
+
+3. Y. Chen, "Music Recommendation Systems in Music Information Retrieval: Leveraging Machine Learning and Data Mining Techniques," *Applied and Computational Engineering*, vol. 87, Aug. 2024.
+
+4. X. Liu, Z. Yang, and J. Cheng, "Music Recommendation Algorithms Based on Knowledge Graph and Multi-task Feature Learning," *Scientific Reports*, vol. 14, Art. no. 2055, Jan. 2024.
+
+---
+
+## 👨‍💻 Author
+
+**Sidhaarth**
+
+GitHub: [@sid75-gb](https://github.com/sid75-gb)
+
+---
+
+## 📌 Project Status
+
+**Completed — Academic/Research Prototype**
+
+The project demonstrates the complete pipeline from data preprocessing and exploratory data analysis to hybrid recommendation and Explainable AI.
