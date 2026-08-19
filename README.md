@@ -181,24 +181,31 @@ Danceability Match: Similar
 Popularity Match: Similar
 ```
 
-###System Workflow
-Spotify Dataset
-      ↓
-Data Preprocessing
-      ↓
-Exploratory Data Analysis
-      ↓
- ┌───────────────┐
- │               │
- ↓               ↓
-KNN             SVD
-Content-Based   Collaborative
-Filtering       Filtering
- │               │
- └───────┬───────┘
-         ↓
-Hybrid Recommendation
-         ↓
-Explainable AI
-         ↓
-Personalized Recommendations
+## 🔄 System Workflow
+
+The overall workflow of the proposed system is:
+
+**Spotify Dataset**  
+↓  
+**Data Preprocessing**  
+↓  
+**Exploratory Data Analysis (EDA)**  
+↓  
+**Content-Based Filtering (KNN)** + **Collaborative Filtering (SVD)**  
+↓  
+**Hybrid Recommendation**  
+↓  
+**Explainable AI (XAI)**  
+↓  
+**Personalized Music Recommendations**
+
+### Recommendation Process
+
+1. **Input:** Spotify song data and user interactions.
+2. **Preprocessing:** Clean, prepare, and standardize the data.
+3. **EDA:** Analyze audio features and dataset patterns.
+4. **KNN:** Find songs with similar audio characteristics.
+5. **SVD:** Predict user preferences for unseen songs.
+6. **Hybrid Model:** Combine content similarity and predicted user ratings.
+7. **XAI:** Generate similarity, confidence, and feature-based explanations.
+8. **Output:** Provide personalized and explainable song recommendations.
