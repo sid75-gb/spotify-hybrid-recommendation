@@ -140,3 +140,65 @@ Example:
 User: User_1
 Song: Believer
 Predicted Rating: 4.06
+```
+
+### 3. Hybrid Recommendation
+
+The hybrid recommendation system combines the outputs of Content-Based Filtering and Collaborative Filtering to generate personalized recommendations.
+
+Content-Based Filtering + Collaborative Filtering → Hybrid Recommendation
+
+This approach considers both the similarity between songs and the user's predicted preferences.
+
+---
+
+## 💡 Explainable AI (XAI)
+
+The Explainable AI module provides understandable reasons behind each recommendation.
+
+It generates:
+
+- Similarity Score
+- Confidence Score
+- Genre Match
+- Energy Similarity
+- Danceability Similarity
+- Tempo Similarity
+- Popularity Similarity
+
+Example:
+
+```text
+Track: Ghost Town
+Predicted Rating: 4.08
+Similarity: 88.4%
+Confidence: 77.2%
+
+Explanation:
+Genre Match: No
+Energy Match: 94.1%
+Danceability Match: Similar
+Popularity Match: Similar
+```
+
+###System Workflow
+Spotify Dataset
+      ↓
+Data Preprocessing
+      ↓
+Exploratory Data Analysis
+      ↓
+ ┌───────────────┐
+ │               │
+ ↓               ↓
+KNN             SVD
+Content-Based   Collaborative
+Filtering       Filtering
+ │               │
+ └───────┬───────┘
+         ↓
+Hybrid Recommendation
+         ↓
+Explainable AI
+         ↓
+Personalized Recommendations
