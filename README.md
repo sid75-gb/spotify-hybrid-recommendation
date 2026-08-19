@@ -323,3 +323,25 @@ GitHub: [@sid75-gb](https://github.com/sid75-gb)
 **Completed — Academic/Research Prototype**
 
 The project demonstrates the complete pipeline from data preprocessing and exploratory data analysis to hybrid recommendation and Explainable AI.
+
+## 📊 Exploratory Data Analysis
+
+### Genre Distribution
+
+![Genre Distribution](images/genre_distribution.png)
+
+### Audio Feature Correlation
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+### Popularity Distribution
+
+![Popularity Distribution](images/popularity_distribution.png)
+
+---
+
+## 🎵 Final XAI Recommendation Output
+
+The system provides personalized recommendations along with predicted ratings, similarity scores, confidence scores, and feature-based explanations.
+
+![XAI Recommendation Output](images/xai_recommendation_output.png)
