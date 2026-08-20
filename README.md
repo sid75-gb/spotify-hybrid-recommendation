@@ -345,3 +345,5 @@ The project demonstrates the complete pipeline from data preprocessing and explo
 The system provides personalized recommendations along with predicted ratings, similarity scores, confidence scores, and feature-based explanations.
 
 ![XAI Recommendation Output](images/xai_recommendation_output.png)
+
+Dataset: Spotify Tracks Dataset containing approximately 114,000 tracks. The dataset was used for model development and experimentation but is not included in this repository.
